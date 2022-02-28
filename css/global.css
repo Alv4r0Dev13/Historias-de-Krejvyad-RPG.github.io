@@ -49,10 +49,17 @@ nav {
     background-color: #c30000;
     position: sticky;
     top: -1px;
-    height: 25px
+    height: 25px    
 }
 
-#links {
+nav a { transition-duration: 500ms }
+
+nav a:hover {
+    color: black;
+    transition-duration: 500ms
+}
+
+#bigger-screens-links {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -60,6 +67,25 @@ nav {
     margin: 0 15% 0 15%;
     padding-top: 6px
 }
+
+#smaller-screens-links { display: none }
+
+#pages-modal {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    background-color: #c30000;
+    border-top: 1px solid white;
+    font-weight: bold;
+    width: fit-content;
+    top: 24px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#pages-modal a { padding: 2px 0 2px 0 }
 
 /* MAIN */
 
@@ -87,9 +113,9 @@ footer {
 #footer-content {
     display: flex;
     justify-content: space-between;
-    justify-self: right;
     user-select: none
 }
+
 #footer-content h1 {
     padding-top: 16px;
     margin: 0;
@@ -101,4 +127,74 @@ footer {
     margin: 0;
     right: 30px;
     bottom: 15px
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+    /* NAVBAR */
+
+    #bigger-screens-links { display: none }
+    
+    #smaller-screens-links {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        user-select: none;
+        margin: 0 15% 0 15%;
+        padding-top: 6px
+    }
+    
+    /* MAIN */
+
+    main { margin: 100px 0 100px 0 }
+
+    /* FOOTER */
+
+    footer {
+        height: 110px
+    }
+
+    #footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+
+    #creator {
+        position: inherit;
+        text-align: center
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    /* NAVBAR */
+
+    #bigger-screens-links { margin: 0 2% 0 2% }
+
+    /* MAIN */
+
+    main { margin: 85px 10% 85px 10% }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* NAVBAR */
+
+    #bigger-screens-links { margin: 0 10% 0 10% }
+
+    /* MAIN */
+
+    main { margin: 85px 10% 85px 10% }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* NAVBAR */
+
+    #bigger-screens-links { margin: 0 10% 0 10% }
+
 }
