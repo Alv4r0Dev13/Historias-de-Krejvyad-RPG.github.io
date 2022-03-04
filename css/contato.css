@@ -41,9 +41,7 @@ form div:not(#buttons) {
     border-radius: 30px;
 }
 
-form p {
-    padding: 0 15px 0 15px;
-}
+form p { padding: 0 15px 0 15px; }
 
 input {
     background-color: white;
@@ -56,9 +54,7 @@ input {
     height: 28px
 }
 
-#message {
-    border-radius: 15px;
-}
+#message { border-radius: 15px; }
 
 textarea {
     outline: none;
@@ -90,4 +86,55 @@ button {
 button:hover {
     background-color: #950000;
     cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+    /* MAIN */
+
+    main { margin: 70px 0 70px 0 }
+    
+    /* TITLE */
+
+    #title {
+        background-image: url(../midias/ctb-small-screens.svg);
+        text-align: center;
+        width: 320px;
+        height: 120px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    #title h1 {
+        padding-top: 20px;
+    }
+
+    /* FORM */
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    /* TITLE */
+
+    main { margin: 85px 10% 85px 10% }
+
+    /* FORM */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* MAIN */
+
+    main { margin: 85px 10% 85px 10% }
+
+    /* TITLE */
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* FORM */
+
 }
