@@ -1,0 +1,93 @@
+main {
+    text-align: justify;
+    margin: 70px 20% 0 20%
+}
+
+/* TITLE */
+
+#title {
+    background-image: url(../midias/contact-title-background.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: black;
+    width: 442px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title h1 { padding-top: 10px }
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div:not(#buttons) {
+    font-weight: bold;
+    background-color: #c30000;
+    height: 40;
+    margin: 20px 0 20px 0;
+}
+
+#name, #email {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+form p {
+    padding: 0 15px 0 15px;
+}
+
+input {
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin: 5px 5px 0 0;
+    padding: 0 10px 0 10px;
+    width: 90%;
+    height: 28px
+}
+
+#message {
+    border-radius: 15px;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    margin: 0 5px 3px 5px;
+    padding: 10px;
+    max-width: calc(100% - 30px);
+    min-width: calc(100% - 30px);
+    max-height: 200px;
+    min-height: 200px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #c30000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    width: 70px; 
+    height: 35px;
+}
+
+button:hover {
+    background-color: #950000;
+    cursor: pointer;
+}
