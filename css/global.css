@@ -88,7 +88,11 @@ nav a:hover {
     margin-right: auto
 }
 
-#pages-modal a { padding: 2px 0 2px 0 }
+#pages-modal a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 0 2px 0
+}
 
 /* MAIN */
 
@@ -151,7 +155,7 @@ footer {
     
     /* MAIN */
 
-    main { margin: 100px 0 100px 0 }
+    main:not(#contact-main) { margin: 100px 0 100px 0 }
 
     /* FOOTER */
 
