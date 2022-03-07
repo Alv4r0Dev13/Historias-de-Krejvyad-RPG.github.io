@@ -1,9 +1,11 @@
 * { font-family: sans-serif }
 
+html { font-size: 62.5%; }
+
 body {
     background-image: url(../midias/hkrpg-background.png);
     background-repeat: repeat;
-    font-size: 12px;
+    font-size: 1.7rem;
     color: white;
     margin: 0
 }
@@ -32,7 +34,7 @@ body {
 
 .bold { font-weight: bold }
 
-.italic { font-style: italic; }
+.italic { font-style: italic }
 
 /* HEADER */
 
@@ -47,7 +49,7 @@ nav {
     background-color: #c30000;
     position: sticky;
     top: -1px;
-    height: 25px    
+    height: 29px    
 }
 
 nav a {
@@ -68,7 +70,7 @@ nav a:hover {
     font-weight: bold;
     user-select: none;
     margin: 0 15% 0 15%;
-    padding-top: 6px
+    padding-top: 5px
 }
 
 #smaller-screens-links { display: none }
