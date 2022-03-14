@@ -36,6 +36,8 @@ body {
 
 .italic { font-style: italic }
 
+.underlined { text-decoration: underline }
+
 /* HEADER */
 
 header {
@@ -111,7 +113,7 @@ main:not(#contact-main) {
 
 #main-content h2 { padding-top: 30px }
 
-#main-content p { padding-top: 30px }
+#main-content p { padding: 30px 0 30px }
 
 /* FOOTER */
 
@@ -157,7 +159,7 @@ footer {
     
     /* MAIN */
 
-    main:not(#contact-main) { margin: 100px 0 100px 0 }
+    main#main { margin: 100px 0 100px 0 }
 
     /* FOOTER */
 
@@ -180,11 +182,20 @@ footer {
 
     /* NAVBAR */
 
-    #bigger-screens-links { margin: 0 2% 0 2% }
+    #bigger-screens-links { display: none }
+
+    #smaller-screens-links {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        user-select: none;
+        margin: 0 15% 0 15%;
+        padding-top: 6px
+    }
 
     /* MAIN */
 
-    main { margin: 85px 10% 85px 10% }
+    main#main { margin: 85px 10% 85px 10% }
 
 }
 
@@ -192,11 +203,11 @@ footer {
 
     /* NAVBAR */
 
-    #bigger-screens-links { margin: 0 10% 0 10% }
+    #bigger-screens-links { margin: 0 1% 0 1% }
 
     /* MAIN */
 
-    main { margin: 85px 10% 85px 10% }
+    main#main { margin: 85px 10% 85px 10% }
 
 }
 
