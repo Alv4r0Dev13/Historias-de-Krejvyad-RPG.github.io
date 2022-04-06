@@ -4,7 +4,7 @@ pages.addEventListener("click", () => {
 
     if (pagesModal.style.display == "none") {
         pagesModal.style.display = "flex";
-        main.style.marginTop = "-19px"
+        main.style.marginTop = "-55px"
     } else {
         pagesModal.style.display = "none";
         main.style.marginTop = "100px"
