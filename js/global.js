@@ -1,13 +1,13 @@
-let pages = document.getElementById("pages"), pagesModal = document.getElementById("pages-modal").style.display, main = document.getElementById("main").style.marginTop;
+let pages = document.getElementById("pages"), pagesModal = document.getElementById("pages-modal"), main = document.getElementById("main");
 
 pages.addEventListener("click", () => { 
 
-    if (pagesModal == "none") {
-        pagesModal = "flex";
-        main.style = "-19px"
+    if (pagesModal.style.display == "none") {
+        pagesModal.style.display = "flex";
+        main.style.marginTop = "-55px"
     } else {
-        pagesModal = "none";
-        main = "100px"
+        pagesModal.style.display = "none";
+        main.style.marginTop = "100px"
     }
 
 });
