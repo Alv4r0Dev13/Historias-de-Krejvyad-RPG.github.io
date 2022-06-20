@@ -159,7 +159,7 @@ footer {
     
     /* MAIN */
 
-    main#main { margin: 100px 0 100px 0 }
+    main:not(#contact-main) { margin: 100px 0 100px 0 }
 
     /* FOOTER */
 
